@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mcp-test-service
+  namespace: default
+  description: Test service registered end-to-end via Backstage MCP tools
+  tags:
+    - test
+    - mcp
+    - service
+  annotations:
+    backstage.io/source-location: "url:https://github.com/talkitdoit/ai-meets-backstage-catalog-to-mcp"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
+  system: examples
