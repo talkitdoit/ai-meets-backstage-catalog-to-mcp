@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: mcp-demo-api
+  namespace: default
+  description: A demo API component created and registered via Backstage MCP tools to showcase end-to-end catalog automation
+  tags:
+    - demo
+    - mcp
+    - api
+    - automation
+  annotations:
+    backstage.io/source-location: "url:https://github.com/talkitdoit/ai-meets-backstage-catalog-to-mcp"
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/guests
+  system: examples
