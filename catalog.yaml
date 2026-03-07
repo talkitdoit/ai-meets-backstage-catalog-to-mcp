@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-component
+  namespace: default
+  description: A test component registered via MCP tools
+  tags: [test, mcp]
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
+  system: examples
